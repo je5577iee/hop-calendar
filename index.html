@@ -638,7 +638,7 @@ function finish(){
   save();
   $('resultBox').innerHTML = Z('<span class="tape"></span><div class="stars">'+[0,1,2].map(function(i){ return starSVG(i<stars); }).join('')+'</div>'
     + '<div class="r-frog">'+frogSVG()+'</div>'
-    + '<div class="r-title">'+['加油，再挑戰一次！','不錯喔！','很厲害！','你是月曆小偵探！'][stars]+'</div>'
+    + '<div class="r-title">'+['加油，再挑戰一次！','不錯喔！','很厲害！','你是月曆小達人！'][stars]+'</div>'
     + '<div class="r-line">'+LEVELS[level].name+'　答對 '+(ok+half)+' / '+TOTAL+' 題'+(half?'（其中 '+half+' 題看了提示）':'')+'</div>'
     + '<div class="r-btns"><button class="note-btn green" id="againBtn">再玩一次</button><button class="note-btn blue" id="homeBtn">回首頁</button></div>');
   $('againBtn').onclick = startGame;
